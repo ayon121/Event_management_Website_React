@@ -4,42 +4,42 @@
       "name": "Weddings",
       "description": "Transform your dream wedding into reality with our expert event planners. From choosing the perfect venue to crafting a personalized ceremony and reception, we'll be with you every step of the way to ensure your special day is truly unforgettable. Our team specializes in creating elegant and unique wedding experiences tailored to your tastes and preferences. Whether you envision a classic, romantic affair or a modern, trendy celebration, we've got you covered. With a price range of $5,000 to $20,000, we offer flexible packages to fit your budget, making your dream wedding a reality.",
       "price_range": "$5,000 - $20,000",
-      "image_url": "https://example.com/wedding.jpg"
+      "image_url": "https://i.ibb.co/jD93SZH/pexels-trung-nguyen-2959192.jpg"
     },
     {
       "id": 2,
       "name": "Birthday Parties",
       "description": "Celebrate birthdays in style with our event planning services. We understand that every birthday is a milestone worth commemorating, and we're here to make it extraordinary. Whether you're planning an intimate gathering or a large-scale bash, our team of professionals will take care of all the details. From choosing the perfect theme and decorations to coordinating entertainment and catering, we've got it all covered. With packages ranging from $500 to $5,000, we offer options for every budget, ensuring a memorable birthday celebration for all.",
       "price_range": "$500 - $5,000",
-      "image_url": "https://example.com/birthday.jpg"
+      "image_url": "https://i.ibb.co/CVwWqQx/pexels-pavel-danilyuk-7180617.jpg"
     },
     {
       "id": 3,
       "name": "Anniversaries",
       "description": "Create unforgettable anniversary celebrations with our help. Anniversaries are a time to reflect on love and commitment, and we're here to make your milestone anniversary truly special. Our expert planners will work closely with you to design a celebration that reflects your unique journey as a couple. Whether you prefer an intimate dinner, a grand party, or a romantic getaway, we'll make sure it's perfect. With a price range of $1,000 to $10,000, we offer customizable packages to fit your vision and budget.",
       "price_range": "$1,000 - $10,000",
-      "image_url": "https://example.com/anniversary.jpg"
+      "image_url": "https://i.ibb.co/c6KWTdF/pexels-ivan-samkov-7922176.jpg"
     },
     {
       "id": 4,
       "name": "Engagement Parties",
       "description": "Kickstart your journey to marriage with a memorable engagement party. Your engagement is a momentous occasion, and we're here to help you celebrate it in style. Our experienced event planners will assist you in creating an engagement party that sets the tone for your upcoming wedding. Whether you envision a chic cocktail soirée or a relaxed outdoor gathering, we'll bring your vision to life. With packages starting from $800 and going up to $5,000, we offer flexible options to match your preferences and budget.",
       "price_range": "$800 - $5,000",
-      "image_url": "https://example.com/engagement.jpg"
+      "image_url": "https://i.ibb.co/JmpztVg/pexels-4564998.jpg"
     },
     {
       "id": 5,
       "name": "Retirement Parties",
       "description": "Send off your retiree with a fantastic retirement party. Retirement marks the end of one chapter and the beginning of another, and we're here to make it a memorable transition. Our event planners will help you organize a retirement party that honors the retiree's accomplishments and wishes. Whether it's an elegant dinner or a fun-filled gathering, we'll take care of all the details. With packages ranging from $500 to $3,000, we offer options to suit your style and budget.",
       "price_range": "$500 - $3,000",
-      "image_url": "https://example.com/retirement.jpg"
+      "image_url": "https://i.ibb.co/ssRQSZQ/pexels-antoni-shkraba-production-8791209.jpg"
     },
     {
       "id": 6,
       "name": "Baby Shower",
       "description": "Welcome the newest member of the family with a joyous baby shower. Anticipating the arrival of a baby is a special time, and we're here to help you celebrate it with love and excitement. Our event planners will assist you in planning a baby shower that's as unique as your growing family. From adorable decorations to thoughtful games and activities, we'll ensure it's a day filled with joy. With packages starting from $300 and going up to $2,000, we offer a range of options to make your baby shower a cherished memory.",
       "price_range": "$300 - $2,000",
-      "image_url": "https://example.com/babyshower.jpg"
+      "image_url": "https://i.ibb.co/xqLzLKX/pexels-pixabay-34763.jpg"
     }
   ]
   
