@@ -6,14 +6,13 @@ import { NavLink } from "react-router-dom";
 const Navber = () => {
 
     const navlinks = <>			
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/career">Career</NavLink></li>
-
+        <li className="text-lg"><NavLink  to="/" className={({ isActive }) => isActive ? 'text-[#DA0037] underline text-xl' : 'bg-transparent'}>Home</NavLink></li>
+        <li className="text-lg"><NavLink  to="/Services" className={({ isActive }) => isActive ? 'text-[#DA0037] underline text-xl' : 'bg-transparent'}>Services</NavLink></li>
+        <li className="text-lg"><NavLink  to="/About" className={({ isActive }) => isActive ? 'text-[#DA0037] underline text-xl' : 'bg-transparent'}>About</NavLink></li>
   </>
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-transparent font-Bebas py-4 px-3 max-w-7xl mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -23,7 +22,7 @@ const Navber = () => {
                     {navlinks}
                 </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <h1 className="text-2xl md:text-4xl lg:text-5xl text-black "><span className="text-[#DA0037]">Event</span>Makers</h1>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -31,7 +30,7 @@ const Navber = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a className="px-3 py-2 md:px-5 md:py-3 rounded-lg bg-[#DA0037] text-white">L o g i n</a>
             </div>
         </div>
     );
