@@ -4,6 +4,7 @@ import Navber from '../Shared_Components/Navber';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../Providers/Authproviders';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import {BsGoogle } from 'react-icons/bs';
 
 const Login = () => {
     const [LoginError, SetLoginError] = useState('')
@@ -73,7 +74,7 @@ const Login = () => {
                         <div className="form-control mt-6">
 
                             <button className="px-3 py-2 md:px-5 md:py-3 rounded-lg bg-[#DA0037] text-white">L o g i n</button>
-                            <button onClick={HandleGoogleLogin} className="px-3 py-2 md:px-5 md:py-3 rounded-lg bg-[#DA0037] text-white mt-3">Login With Google</button>
+                            <button onClick={HandleGoogleLogin} className="px-3 py-2 md:px-5 md:py-3 rounded-lg bg-[#DA0037] text-white mt-3 flex items-center gap-2 justify-center"><span className='text-xl'><BsGoogle></BsGoogle></span>Login With Google</button>
 
 
 
