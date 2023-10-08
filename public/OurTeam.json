@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Emily Davis",
+      "position": "Lead Event Planner",
+      "description": "Emily is a detail-oriented event planner known for her exceptional organizational skills. She has a knack for turning clients' visions into reality and ensuring every event runs smoothly.",
+      "image_url": "https://i.ibb.co/cLhgVmd/pexels-andrea-piacquadio-3760779.jpg"
+    },
+    {
+      "id": 2,
+      "name": "John Smith",
+      "position": "Founder & CEO",
+      "description": "With over 10 years of experience in event planning, John is the driving force behind [Your Company Name]. His creativity and passion for crafting memorable events are at the heart of our success.",
+      "image_url": "https://i.ibb.co/R3FwPb1/pexels-andrea-piacquadio-837306.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "position": "Creative Designer",
+      "description": "Michael is our resident design guru, responsible for creating stunning decor and ambiance. His artistic touch adds an extra layer of beauty to every event we plan.",
+      "image_url": "https://i.ibb.co/tcPjVmY/pexels-kamshotthat-3217111.jpg"
+    }
+  ]
+  
