@@ -4,10 +4,11 @@ import { FaFacebook , FaInstagram , FaYoutube} from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className="p-10 bg-[#EDEDED] text-base-content font-Bebas">
+        <div className="p-10 bg-[#EDEDED] text-base-content font-Bebas md:rounded-se-full border-t-2 md:border-t-4 border-[#DA0037]">
             <div className="footer text-base-content max-w-7xl mx-auto">
                 <nav>
                 <h1 className="text-5xl md:text-4xl lg:text-5xl text-black "><span className="text-[#DA0037]">Event</span>Makers</h1>
+                
                 </nav>
                 <nav>
                     <header className="footer-title">S e r v i c e s</header>
