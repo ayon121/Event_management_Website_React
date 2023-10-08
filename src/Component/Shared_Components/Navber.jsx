@@ -1,9 +1,19 @@
 
 // import PropTypes from 'prop-types';
 
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../Providers/Authproviders";
 
 const Navber = () => {
+    const { user  , logout} = useContext(AuthContext)
+
+    const handlelogOut = () => {
+        logout()
+        .then()
+        .catch()
+    }
+
 
     const navlinks = <>			
         <li className="text-lg"><NavLink  to="/" className={({ isActive }) => isActive ? 'text-[#DA0037] underline text-xl' : 'bg-transparent'}>Home</NavLink></li>
@@ -30,7 +40,17 @@ const Navber = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="px-3 py-2 md:px-5 md:py-3 rounded-lg bg-[#DA0037] text-white">L o g i n</a>
+                {
+                      user ? <button onClick={handlelogOut} className="px-3 py-2 md:px-5 md:py-3 rounded-lg bg-[#DA0037] text-white">Logout</button>
+                      :
+                      <Link to="/Login">
+                          <button className="px-3 py-2 md:px-5 md:py-3 rounded-lg bg-[#DA0037] text-white">Login</button>
+                      </Link>
+
+                }
+               
+        
+                
             </div>
         </div>
     );
