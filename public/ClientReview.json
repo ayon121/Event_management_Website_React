@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "client_name": "Alice Johnson",
+      "client_location": "New York, NY",
+      "comment": "The team at EventMakers exceeded all our expectations. Our wedding was a dream come true, and it was all thanks to their hard work and attention to detail."
+    },
+    {
+      "id": 2,
+      "client_name": "David Smith",
+      "client_location": "Los Angeles, CA",
+      "comment": "We had a fantastic experience working with EventMakers. They made our anniversary celebration truly special. Highly recommended!"
+    },
+    {
+      "id": 3,
+      "client_name": "Eva Martinez",
+      "client_location": "Chicago, IL",
+      "comment": "From start to finish, the team at EventMakers was professional and accommodating. Our baby shower was adorable, and we couldn't be happier with the results."
+    }
+  ]
+  
