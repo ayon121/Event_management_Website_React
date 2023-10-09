@@ -4,6 +4,9 @@ import { useContext } from 'react';
 import { AuthContext } from '../../Providers/Authproviders';
 import Navber from '../Shared_Components/Navber';
 import { Link } from 'react-router-dom';
+// react toast
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
     const { createUser } = useContext(AuthContext)
@@ -14,8 +17,8 @@ const Register = () => {
         const password = form.get('password')
         // create user
         createUser(email , password)
-        .then(result => console.log(result))
-        .catch(error => console.log(error))
+        .then( toast("Register SuccessFull Go to Login"))
+        .catch(error => toast(error.message))
 
         
     }
@@ -49,6 +52,7 @@ const Register = () => {
                     </form>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };

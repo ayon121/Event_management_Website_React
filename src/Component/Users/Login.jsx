@@ -1,14 +1,16 @@
 
 // import PropTypes from 'prop-types';
 import Navber from '../Shared_Components/Navber';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { AuthContext } from '../../Providers/Authproviders';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {BsGoogle } from 'react-icons/bs';
+// react toast
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
-    const [LoginError, SetLoginError] = useState('')
-    const [LoginSuccess, SetLoginSuccess] = useState('')
+    
     const location = useLocation()
     const navigate = useNavigate()
 
@@ -21,12 +23,14 @@ const Login = () => {
         loginUser(email, password)
             .then(result => {
                 console.log(result.user)
-                SetLoginSuccess('Login Success')
+                toast("Login Success")
                 // navigate after login
                 navigate(location?.state ? location.state : '/')
 
             })
-            .catch(error => SetLoginError(error.message))
+            .catch(error =>{ 
+                toast(error.message)
+                })
 
 
     }
@@ -35,9 +39,10 @@ const Login = () => {
         GoogleLogin()
             .then(result => {
                 console.log(result)
-                SetLoginSuccess('Login Success')
+                toast("Login Success")
+    
             })
-            .catch(error => SetLoginError(error.message))
+            .catch(error => toast(error.message))
     }
 
 
@@ -59,13 +64,7 @@ const Login = () => {
                                 <span className="label-text">Password</span>
                             </label>
                             <input type="password" placeholder="password" name='password' className="input input-bordered" required />
-                            {/* error and success sms */}
-                            {
-                                LoginError && <p className="text-red-600 mr-1">{LoginError}</p>
-                            }
-                            {
-                                LoginSuccess && <p className="text-green-600">{LoginSuccess}</p>
-                            }
+                           
                             <label className="label flex">
                                 <Link to="" className='underline'>Forgot password?</Link>
                                 <Link to="/Register" className='underline'>Register</Link>
@@ -83,6 +82,7 @@ const Login = () => {
                     </form>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
