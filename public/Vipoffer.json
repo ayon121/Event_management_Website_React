@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "service_id": 1,
+      "title": "Elegant Wedding Package",
+      "description": "Book our Elegant Wedding Package and enjoy a luxurious wedding experience. Includes venue decoration, catering, photography, and more.",
+      "discount_percentage": 10,
+      "valid_until": "2023-12-31"
+    },
+    {
+      "id": 2,
+      "service_id": 2,
+      "title": "Birthday Extravaganza Deal",
+      "description": "Celebrate birthdays in style with our Birthday Extravaganza Deal. Custom themes, entertainment, and a delicious cake included.",
+      "discount_percentage": 15,
+      "valid_until": "2023-10-31"
+    },
+    {
+      "id": 3,
+      "service_id": 3,
+      "title": "Anniversary Romance Package",
+      "description": "Rekindle the romance with our Anniversary Romance Package. Enjoy a romantic dinner, live music, and beautiful decor.",
+      "discount_percentage": 12,
+      "valid_until": "2023-11-30"
+    },
+    {
+      "id": 4,
+      "service_id": 4,
+      "title": "Engagement Celebration Special",
+      "description": "Make your engagement unforgettable with our Engagement Celebration Special. Customized decor, a photo booth, and more.",
+      "discount_percentage": 8,
+      "valid_until": "2023-12-15"
+    },
+    {
+      "id": 5,
+      "service_id": 5,
+      "title": "Retirement Bliss Package",
+      "description": "Bid farewell to a colleague with our Retirement Bliss Package. A memorable party with speeches, gifts, and entertainment.",
+      "discount_percentage": 10,
+      "valid_until": "2023-11-15"
+    },
+    {
+      "id": 6,
+      "service_id": 6,
+      "title": "Baby Shower Delight Deal",
+      "description": "Welcome the newest addition to your family with our Baby Shower Delight Deal. Fun games, decorations, and a diaper cake included.",
+      "discount_percentage": 10,
+      "valid_until": "2023-10-15"
+    }
+  ]
+  

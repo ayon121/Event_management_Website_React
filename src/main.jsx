@@ -15,6 +15,7 @@ import PrivateRoute from './PrivateRoute/PrivateRoute';
 import About from './Component/Pages/About';
 import ErrorPage from './Component/Pages/ErrorPage';
 import Contact from './Component/Pages/Contact';
+import VIPOffers from './Component/Pages/VIPOffers';
 
 
 const router = createBrowserRouter([
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path : "/Contact",
-        element : <Contact></Contact>
+        element : <PrivateRoute><Contact></Contact></PrivateRoute>
       },
       {
         path : "/About",
@@ -47,6 +48,11 @@ const router = createBrowserRouter([
       {
         path : "/Login",
         element : <Login></Login>
+      },
+      {
+        path : "/VIPOffers",
+        element : <PrivateRoute><VIPOffers></VIPOffers></PrivateRoute>,
+        loader: () => fetch('../Vipoffer.json')//warning: it is not a perfect way to load data
       }
     ]
   },

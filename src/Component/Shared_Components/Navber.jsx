@@ -20,8 +20,13 @@ const Navber = () => {
 
     const navlinks = <>
         <li className="text-lg"><NavLink to="/" className={({ isActive }) => isActive ? 'text-[#DA0037] underline text-xl' : 'bg-transparent'}>Home</NavLink></li>
-        <li className="text-lg"><NavLink to="/Contact" className={({ isActive }) => isActive ? 'text-[#DA0037] underline text-xl' : 'bg-transparent'}>Contact Us</NavLink></li>
         <li className="text-lg"><NavLink to="/About" className={({ isActive }) => isActive ? 'text-[#DA0037] underline text-xl' : 'bg-transparent'}>About Us</NavLink></li>
+        {
+            user && <li className="text-lg"><NavLink to="/VIPOffers" className={({ isActive }) => isActive ? 'text-[#DA0037] underline text-xl' : 'bg-transparent'}>VIPOffers</NavLink></li>
+        }
+        {
+            user && <li className="text-lg"><NavLink to="/Contact" className={({ isActive }) => isActive ? 'text-[#DA0037] underline text-xl' : 'bg-transparent'}>Contact Us</NavLink></li>
+        }
     </>
 
     return (
