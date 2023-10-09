@@ -12,6 +12,7 @@ import Authproviders from './Providers/Authproviders';
 import Register from './Component/Users/Register';
 import Login from './Component/Users/Login';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import About from './Component/Pages/About';
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>
+      },
+      {
+        path : "/About",
+        element : <About></About>
       },
       {
         path: "/services/:id",
