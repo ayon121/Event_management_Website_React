@@ -15,6 +15,18 @@ const Register = () => {
         const form = new FormData(e.currentTarget);
         const email = form.get('email')
         const password = form.get('password')
+        if (password.length < 6) {
+            toast('Password should be more than 6 characters')
+            return
+        }
+        else if (!/[A-Z]/.test(password)) {
+            toast('Password should have capital letter characters')
+            return
+        }
+        else if (!/^[a-zA-Z0-9_]*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]+[a-zA-Z0-9_]*$/.test(password)) {
+            toast('Password should have a special character')
+            return
+        }
         // create user
         createUser(email , password)
         .then( toast("Register SuccessFull Go to Login"))
